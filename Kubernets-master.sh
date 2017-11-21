@@ -17,7 +17,7 @@ enabled=1
 gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+       https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 yum install kubeadm docker -y
 systemctl restart docker && systemctl enable docker
@@ -29,4 +29,4 @@ chown $(id -u):$(id -g) $HOME/.kube/config
 export kubever=$(kubectl version | base64 | tr -d '\n')
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
 kubectl get nodes
-kubectl  get pods  --all-namespaces
+kubectl get pods  --all-namespaces
