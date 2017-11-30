@@ -7,13 +7,13 @@ pipeline {
               sh 'git --version'
             }
        }
-    stages {
+    
         stage('Build') { 
             steps {
               sh 'git branch'
             }
         }
-        }
+        
         stage('Deploy') {
             steps {
                 sh 'whoami'
