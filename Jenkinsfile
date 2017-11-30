@@ -7,18 +7,14 @@ pipeline {
     }
     }
     }
-    stages {
         stage('Build') {
             steps {
                 sh 'echo "Task accomplished"'
                 }
               }
-             }
-      stages {
          stage('Deploy'){
             steps{
               sh 'echo "deploy"'
-              }
              }
             }
        }
