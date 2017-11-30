@@ -8,7 +8,7 @@ pipeline {
             }
     stage('create file'){
     steps{
-    sh 'touch demofile'
+    sh 'touch demofile1'
     sh 'ls'
     }
     }
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('commit'){
     steps{
-    sh 'git commit -am "this is demo"
+    sh 'git commit -am "this is demo"'
     }
     }
     stage('push'){
