@@ -1,0 +1,22 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage('Build') { 
+            steps { 
+                sh 'pwd' 
+            }
+        }
+        stage('Test'){
+            steps {
+                sh 'mkdir vv'
+                
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "sucessful"'
+            }
+        }
+    }
+}
