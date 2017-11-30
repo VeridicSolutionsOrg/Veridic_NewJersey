@@ -24,7 +24,7 @@ pipeline {
     }
     stage('push'){
     steps{
-    sh 'git push origin */veridic/rajeshevuri'
+    sh 'git push origin master/veridic/rajeshevuri'
     }
     }
     stage('BUILD'){
