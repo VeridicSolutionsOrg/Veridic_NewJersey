@@ -8,7 +8,7 @@ pipeline {
             }
     stage('create file'){
     steps{
-    sh 'touch demofile3'
+    sh 'touch demofile4'
     sh 'ls'
     }
     }
