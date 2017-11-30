@@ -2,20 +2,20 @@ pipeline {
     agent any 
 
     stages {
-        stage('Build') { 
+        stage('Checkout') { 
             steps { 
-                sh 'make' 
+                sh 'git --version' 
             }
         }
-        stage('Test'){
+        stage('Build'){
             steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
+                sh 'git branch'
+                
             }
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+                sh 'whoami'
             }
         }
     }
