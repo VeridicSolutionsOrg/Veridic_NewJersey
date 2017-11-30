@@ -5,17 +5,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git checkout veridic/ManojPeddireddy
+                sh 'git checkout veridic/ManojPeddireddy'
             }
         }
         stage('Build') {
             steps {
-                git branch
+                sh 'git branch'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Hello World'
+                sh 'echo "Hello World"'
             }
         }
     }
