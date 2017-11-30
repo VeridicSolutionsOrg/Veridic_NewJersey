@@ -8,7 +8,7 @@ pipeline {
             }
     stage('create file'){
     steps{
-    sh 'touch demofile1'
+    sh 'touch demofile2'
     sh 'ls'
     }
     }
@@ -24,7 +24,7 @@ pipeline {
     }
     stage('push'){
     steps{
-    sh 'git push origin master'
+    sh 'git push origin veridic/rajeshevuri'
     }
     }
     stage('BUILD'){
