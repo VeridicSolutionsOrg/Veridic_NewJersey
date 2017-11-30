@@ -6,27 +6,6 @@ pipeline {
                 sh 'git checkout veridic/rajeshevuri'
             }
             }
-    stage('create file'){
-    steps{
-    sh 'touch demofile5'
-    sh 'ls'
-    }
-    }
-    stage('add file'){
-    steps{
-    sh 'git add .'
-    }
-    }
-    stage('commit'){
-    steps{
-    sh 'git commit -am "this is demo"'
-    }
-    }
-    stage('push'){
-    steps{
-    sh 'git push origin veridic/rajeshevuri'
-    }
-    }
     stage('BUILD'){
     steps{
     sh 'echo "task finished"'
