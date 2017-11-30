@@ -6,6 +6,7 @@ pipeline {
     sh 'git checkout Verdic/Sri3009'
     }
     }
+    }
     stages {
         stage('Build') {
             steps {
@@ -21,4 +22,3 @@ pipeline {
              }
             }
        }
-}
