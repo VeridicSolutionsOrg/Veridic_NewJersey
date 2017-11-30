@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-    stage('checkout to branch')
+    stage('checkout')
     steps{
     sh 'git checkout Verdic/Sri3009'
     }
