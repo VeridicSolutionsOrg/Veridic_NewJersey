@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('checkout'){
     steps{
-    sh 'git checkout Verdic/Sri3009'
+    sh 'git checkout veridic/rcparimala'
     }
     }
         stage('Build') {
