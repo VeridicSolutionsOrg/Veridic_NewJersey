@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description":"NBV, LIQUID Template | Create Jenkins EC2 for use as slave",
+    "Description":"| Create Jenkins EC2 for use as slave",
     "Parameters": {
         "VPC": {
             "Description": "Choose which VPC the Application Load Balancer should be deployed to",
@@ -72,7 +72,7 @@
         "AMI": {
             "Description": "CIS Image encrypted  | Enter the ami-id (Amazon machine Image ID) to be used in the EC2 instances",
             "Type": "AWS::EC2::Image::Id",
-            "Default": "ami-d58380aa",
+            "Default": "",
             "ConstraintDescription": "It must be a valid ami-id (Amazon machine Image ID)."
         },
         "KeyName": {
@@ -154,7 +154,7 @@
         "Tags": [
       {
         "Key": "Name",
-        "Value": "NBV_STAGE_JENKINS"
+        "Value": "JENKINS_Agent"
       } ],
 "UserData": {
     "Fn::Base64": {
